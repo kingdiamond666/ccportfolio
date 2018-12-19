@@ -1,0 +1,208 @@
+#project-1{
+  background: url('../img/projects/space.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#project-2{
+  background: url('../img/projects/camp.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#project-3{
+  background: url('../img/projects/indomito.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper2{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#logo1{
+  background: url('../img/projects/spacex.png');
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+#logo2{
+  align-self: right;
+  background: url('../img/projects/yelpcamp.png');
+  margin-top: 10px;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+#logo3{
+  background: url('../img/projects/indomito.png');
+  margin-top: 30px;
+  margin-right: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+.project-info, .project-info2{
+  display:grid;
+}
+.sidebar{
+  align-self: end;
+  padding: 15px;
+  width: 179px;
+  color: #fff;
+}
+.anicon{
+  height: 48px;
+  width: 48px;
+}
+.sidebar {
+  padding-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+.sidebar h3 {
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.projnumber h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 10rem;
+  margin-bottom: 120px;
+}
+.projnumber, .projnumber2{
+    display: grid;
+}
+.projnumber2 h1{
+  justify-self: end;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 10rem;
+}
+.wrapper h2, .wrapper2 h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wrapper h2{
+  place-self: left;
+}
+.wrapper2 h2{
+  place-self: right;
+}
+.project-info h2{
+  justify-self: start;
+}
+.project-info2 h2{
+  justify-self: end;
+}
+hr{
+  justify-self: start;
+  margin-left: 0;
+  width: 250px;
+}
+.wrapper2 hr{
+  justify-self: end;
+  margin-right: 0;
+  width: 250px;
+}
+.description{
+  display:grid;
+  grid-template-columns: 70% 30%;
+  justify-items: start;
+}
+.description2{
+  display:grid;
+  grid-template-columns: 30% 70%;
+  justify-items: end;
+}
+
+.description p, .description2 p{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.description p{
+  text-align: left;
+}
+.description2 p{
+  text-align: right;
+}
+
+.description a, .description2 a{
+  display: block;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 1.1rem;
+  /* padding-bottom: 20px; */
+  /* margin-bottom: 20px; */
+}
+.project-info{
+
+}
+.iphone-spacex {
+
+  background: url('../img/spacexiphone1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iphone-yelpcamp {
+
+  background: url('../img/yelpcampiphone1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-footer{
+  height: 50px;
+  width: 100%;
+}
