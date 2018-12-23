@@ -1,3 +1,99 @@
+html, body{
+  height: 100%;
+}
+.intro{
+  height: 100%;
+}
+.title{
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    ". sub sub sub sidebar"
+    ". link link link sidebar"
+    "footer footer footer footer footer";
+
+}
+.signature{
+  padding-top: 20px;
+  padding-left: 15px;
+  grid-area: header;
+  justify-self: center;
+  width: 50%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+#christian{
+  grid-area: main;
+  justify-self: center;
+  margin-bottom: 0;
+  overflow: hidden;
+  align-self: start;
+  /* margin: auto; */
+  font-family: 'Oswald', san-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgba( 60, 60, 60, .8);
+  font-size: 3rem;
+
+}
+
+#subtitle{
+  grid-area: sub;
+  justify-self: center;
+  font-family: 'Oswald', san-serif;
+  color: rgba( 60, 60, 60, .8);
+  font-weight: 100;
+
+}
+.title-linkwrap{
+  grid-area: link;
+  display: grid;
+  justify-self: center;
+  align-content: start;
+}
+.title-linkwrap a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Oswald', san-serif;
+  color: rgba( 60, 60, 60, .8);
+  font-weight: 300;
+}
+.title-linkwrap a:hover, .linkwrap a:hover{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-weight: 600;
+}
+.pzero{
+  grid-area: sidebar;
+  justify-self: end;
+  align-self: start;
+  grid-column: 4 / 5;
+  line-height: normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: red;
+  font-size: 5rem;
+  z-index: 10;
+  overflow: hidden;
+}
+.pzero h1{
+  margin-top: 0;
+}
+#hero{
+  background: url('../img/background-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
 #project-1{
   background: url('../img/projects/space.jpg');
   background-position: 0px 0px;
@@ -14,6 +110,13 @@
 }
 #project-3{
   background: url('../img/projects/indomito.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#project-4{
+  background: url('../img/projects/fun.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,6 +173,26 @@
   position: -webkit-sticky;
   position: sticky;
   top: 15px;
+}
+#logo4{
+  align-self: right;
+  height: 100px;
+  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+#logo4{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .project-info, .project-info2{
   display:grid;
@@ -192,17 +315,422 @@ hr{
 }
 .iphone-spacex {
 
-  background: url('../img/spacexiphone1.png');
+  background: url('../img/iphoneimgs/spacexiphone.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .iphone-yelpcamp {
 
-  background: url('../img/yelpcampiphone1.png');
+  background: url('../img/iphoneimgs/yelpcampiphone1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iphone-indomito {
+
+  background: url('../img/iphoneimgs/indomitoiphone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iphone-patatap {
+
+  background: url('../img/iphoneimgs/patatapiphone.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .section-footer{
   height: 50px;
   width: 100%;
+}
+
+#contact{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 20px repeat(3, 1fr) 20px;
+  grid-template-rows: 100px auto 100px 100px auto 100px 100px;
+  grid-gap: 10px;
+  width: auto;
+  background: rgb(60, 60, 60);
+}
+.contact-header{
+  grid-row: 2;
+  grid-column: 2 / 5;
+}
+
+.contact-header h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.contact-form{
+  display: grid
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  grid-row: 3 / 7;
+  grid-column: 2 / 5;
+}
+label {
+  display: block;
+  margin-top: 0;
+margin-bottom: 20px;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+color: rgba(250, 250, 250, 0.8);
+font-size: 1.1rem;
+text-transform: uppercase;
+}
+
+input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 1rem;
+  width: 100%;
+  background-color: rgba(250, 250, 250);
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus {
+  outline: none;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  border: 4px solid #fff;
+}
+
+textarea{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 1rem;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.n{
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+.e{
+  grid-column: 1 / -1;
+  grid-row: 4 / 6;
+  align-self: center;
+}
+.m{
+  grid-column: 1 / -1;
+  grid-row: 7 / 9;
+  align-self: center;
+}
+.sb{
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background: none;
+  width: 100%;
+  /* height: 75px; */
+  grid-row: 10 / 12;
+  grid-column: 1 / -1;
+  align-self: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  transition: all 0.5s;
+  }
+.sb span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.sb span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.sb:hover{
+  padding-right: 25px;
+  background-color: white;
+  color: black;
+}
+.sb:hover span:after {
+  opacity: 1;
+  right: 0.25;
+}
+.proj00{
+  grid-row: 1;
+  grid-column: 2 / 5;
+  align-self: center;
+}
+.proj00 h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 10rem;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.lasthr{
+  align-self: start;
+  justify-self: center;
+  margin: auto;
+}
+.contact-header{
+  grid-row: 4;
+}
+.contact-form{
+  grid-row: 5 / 8;
+}
+.sb{
+  margin-bottom: 30px;
+}
+.selfie{
+  grid-column: 1;
+  grid-row-end: 2;
+  max-height: 250px;
+  max-width: 250px;
+  height: auto;
+  width: auto;
+  margin-left: 25px;
+  border-radius: 15%;
+}
+.about{
+  grid-column: 1;
+  padding-left: 2em;
+  grid-row: 4;
+  align-self: start;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 2;
+}
+.about h2, .about p{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.8);
+}
+.about h2{
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.about p{
+  margin-top: 0;
+}
+
+
+/* LARGE SCREENS */
+@media(min-width: 700px){
+  #contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact-header{
+    grid-column: 2;
+    padding-left: 30px;
+  }
+
+  .contact-form{
+    padding: 2em;
+  }
+  .proj00{
+    margin-right: 100px;
+    grid-row: 1;
+    grid-column: 3;
+    align-self: center;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  .lasthr{
+    align-self: start;
+    justify-self: center;
+    margin: auto;
+  }
+  .contact-header{
+    grid-row: 4;
+  }
+  .contact-form{
+    grid-row: 5 / 8;
+  }
+  .sb{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:1050px){
+  #christian{
+    font-size: 4rem;
+  }
+  .contact-header{
+    grid-column: 1;
+  }
+  .selfie{
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+  }
+  .about{
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+@media screen and (max-width:850px){
+  #christian{
+    font-size: 3rem;
+  }
+  .selfie, .about{
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 700px){
+  .contact-header{
+    grid-column: 1 / -1;
+  }
+  .contact-header h2{
+    text-align: center;
+  }
+}
+@media screen and (max-width:650px){
+  .title-linkwrap{
+    grid-area: footer;
+    align-self: start;
+  }
+  .pzero{
+    grid-area: sidebar;
+    justify-self: center;
+    align-self: end;
+    grid-column: 2 / 5;
+    font-size: 5rem;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .pzero h1{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 450px){
+  .wrapper, .wrapper2{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+  }
+  .iphone{
+    visibility: hidden;
+  }
+  #logo1, #logo2, #logo3 #logo4{
+    grid-column: 1 / -1;
+  }
+  #logo2{
+    background-position: center center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+  }
+  #logo4{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+  }
+  .sidebar{
+    /* grid-row: 3;
+    grid-column: 1 / -1; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+  }
+  #project-3 .sidebar{
+    /* grid-row: 3;
+    grid-column: 1 / -1; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+  }
+  .wrapper2 .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+  }
+  .project-info{
+    justify-content: center;
+  }
+  .projnumber h1, .project-info h2, .description p{
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .projnumber2 h1, .project-info2 h2, .description2 p {
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .description, .description2{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .description p, .description2 p{
+    text-align: center;
+    grid-column: 1;
+    padding: 0 30px;
+  }
+  .description a{
+    text-align: center;
+  }
+  .wrapper hr, .wrapper2 hr{
+    justify-self: center;
+    margin: auto;
+  }
+  .proj00{
+    grid-row: 1;
+    grid-column: 2 / 5;
+    align-self: center;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  .lasthr{
+    align-self: start;
+    justify-self: center;
+    margin: auto;
+  }
+  .contact-header{
+    grid-row: 4;
+  }
+  .contact-form{
+    grid-row: 5 / 8;
+  }
+  .sb{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 400px){
+
+  #subtitle{
+    font-size: 1.3rem;
+  }
+
 }
