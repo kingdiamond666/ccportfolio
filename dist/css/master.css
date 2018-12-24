@@ -102,7 +102,7 @@ html, body{
 
 #project-1{
   background: url('../img/projects/space.jpg');
-  background-position: 0px 0px;
+  /* background-position: 0px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -111,7 +111,7 @@ html, body{
 }
 #project-2{
   background: url('../img/projects/camp.jpg');
-  background-position: 0px 0px;
+  /* background-position: 0px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -120,7 +120,7 @@ html, body{
 }
 #project-3{
   background: url('../img/projects/indomito.jpg');
-  background-position: 0px 0px;
+  /* background-position: 0px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -129,7 +129,7 @@ html, body{
 }
 #project-4{
   background: url('../img/projects/fun.jpg');
-  background-position: 0px 0px;
+  /* background-position: 0px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
