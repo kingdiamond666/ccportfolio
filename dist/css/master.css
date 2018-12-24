@@ -92,47 +92,41 @@ html, body{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 #project-1{
   background: url('../img/projects/space.jpg');
-  /* background-position: 0px 0px; */
+  background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
 #project-2{
   background: url('../img/projects/camp.jpg');
-  /* background-position: 0px 0px; */
+  background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
 #project-3{
   background: url('../img/projects/indomito.jpg');
-  /* background-position: 0px 0px; */
+  background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
 #project-4{
   background: url('../img/projects/fun.jpg');
-  /* background-position: 0px 0px; */
+  background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
