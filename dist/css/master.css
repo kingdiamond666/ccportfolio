@@ -589,6 +589,10 @@ textarea{
   }
 }
 @media screen and (max-width:1050px){
+  #project-1, #project-2, #project-3, #project-4, .pzero{
+    background-attachment: initial;
+  }
+
   #christian{
     font-size: 4rem;
   }
@@ -641,9 +645,6 @@ textarea{
   }
 }
 @media screen and (max-width: 450px){
-  #project-1, #project-2, #project-3, #project-4, .pzero{
-    background-attachment: initial;
-  }
 
 
   .wrapper, .wrapper2{
