@@ -644,6 +644,8 @@ textarea{
   #project-1, #project-2, #project-3, #project-4, .pzero{
     background-attachment: initial;
   }
+
+
   .wrapper, .wrapper2{
     display: grid;
     grid-template-columns: 3fr;
