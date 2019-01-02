@@ -85,7 +85,7 @@ html, body{
   margin-top: 0;
 }
 #hero{
-  background: url('../img/background-min.jpg');
+  background: url('../img/background-min.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -95,7 +95,7 @@ html, body{
 
 
 #project-1{
-  background: url('../img/projects/space.jpg');
+  background: url('../img/projects/space.jpeg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ html, body{
   height: 100%;
 }
 #project-2{
-  background: url('../img/projects/camp.jpg');
+  background: url('../img/projects/camp.jpeg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -537,7 +537,7 @@ textarea{
   grid-template-rows: 1;
   grid-template-columns: 2;
 }
-.about h2, .about p{
+.about h2, .about p, .about a{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: rgba(250, 250, 250, 0.8);
@@ -550,6 +550,14 @@ textarea{
   margin-top: 0;
 }
 
+footer{
+  margin: 10px auto;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 
 /* LARGE SCREENS */
 @media(min-width: 700px){
