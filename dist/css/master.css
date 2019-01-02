@@ -549,6 +549,9 @@ textarea{
 .about p{
   margin-top: 0;
 }
+.about a{
+  text-decoration: none;
+}
 
 footer{
   margin: 10px auto;
